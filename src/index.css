@@ -1,13 +1,135 @@
 body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app-container {
+  display: flex;
 }
+
+.navbar {
+  width: 250px;
+  background-color: #2e82ff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 555px;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.navbar-item {
+  color: white;
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 20px;
+  font-weight:bold ;
+}
+
+.navbar-item.active {
+  font-weight: bold;
+}
+
+.main-content {
+  padding: 20px;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 150px;
+  height: 100px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.red-card {
+  background-color: #e74c3c;
+}
+
+.purple-card {
+  background-color: #8e44ad;
+}
+
+.green-card {
+  background-color: #27ae60;
+}
+
+.card span {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.card p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.menu-item1,.menu-item2,.menu-item3,.menu-item4,.menu-item5,.menu-item6,.menu-item7{
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+.menu-item1:hover{
+background-color: grey;
+}
+.menu-item2:hover{
+  background-color: grey;
+  }
+  .menu-item3:hover{
+    background-color: grey;
+    }
+    .menu-item4:hover{
+      background-color: grey;
+      }
+      .menu-item5:hover{
+        background-color: grey;
+        }
+        .menu-item6:hover{
+          background-color: grey;
+          }
+          .menu-item7:hover{
+            background-color: grey;
+            }
+
+li{
+  list-style-type: none;
+}
+.font{
+  margin-left: 65px;
+  font-size: x-large;
+}
+.font1{
+  font-size: x-large;
+}
+/* .menu-item {
+  background-color:white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+} */
